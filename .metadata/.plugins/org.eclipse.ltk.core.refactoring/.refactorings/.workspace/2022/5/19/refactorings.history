@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="4 個のリソースを削除" deleteContents="false" description="4 個のリソースを削除" element1="/terasoluna-tourreservation" element2="/terasoluna-tourreservation-domain" element3="/terasoluna-tourreservation-env" element4="/terasoluna-tourreservation-web" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="4" stamp="1651854247916"/>
+</session>

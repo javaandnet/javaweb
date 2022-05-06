@@ -1,0 +1,26 @@
+-------------------------------------------------------------------------------
+Test set: com.example.javaweb.selenium.welcome.HelloIT
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.487 s <<< FAILURE! - in com.example.javaweb.selenium.welcome.HelloIT
+com.example.javaweb.selenium.welcome.HelloIT.testHelloWorld  Time elapsed: 0.001 s  <<< ERROR!
+org.springframework.beans.factory.UnsatisfiedDependencyException: 
+Error creating bean with name 'com.example.javaweb.selenium.welcome.HelloIT': Unsatisfied dependency expressed through field 'webDriver'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webDriver' defined in class path resource [META-INF/spring/seleniumContext.xml]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.openqa.selenium.firefox.FirefoxDriver]: Constructor threw exception; nested exception is org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'chouis-MacBook-puro.local', ip: '240b:c011:410:889f:5bd:bd46:2948:7e9f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6.4', java.version: '17.0.2'
+Driver info: driver.version: FirefoxDriver
+Caused by: org.springframework.beans.factory.BeanCreationException: 
+Error creating bean with name 'webDriver' defined in class path resource [META-INF/spring/seleniumContext.xml]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.openqa.selenium.firefox.FirefoxDriver]: Constructor threw exception; nested exception is org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'chouis-MacBook-puro.local', ip: '240b:c011:410:889f:5bd:bd46:2948:7e9f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6.4', java.version: '17.0.2'
+Driver info: driver.version: FirefoxDriver
+Caused by: org.springframework.beans.BeanInstantiationException: 
+Failed to instantiate [org.openqa.selenium.firefox.FirefoxDriver]: Constructor threw exception; nested exception is org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'chouis-MacBook-puro.local', ip: '240b:c011:410:889f:5bd:bd46:2948:7e9f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6.4', java.version: '17.0.2'
+Driver info: driver.version: FirefoxDriver
+Caused by: org.openqa.selenium.WebDriverException: 
+Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'chouis-MacBook-puro.local', ip: '240b:c011:410:889f:5bd:bd46:2948:7e9f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6.4', java.version: '17.0.2'
+Driver info: driver.version: FirefoxDriver
+

@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+/Users/tyouree/Documents/workspace/javaapp/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3552634037.index
+926484827.index
+2856826430.index
+2115164996.index
+671284143.index
+1779605278.index

@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Created-By: Maven WAR Plugin 3.3.1
+Build-Jdk-Spec: 18
+Implementation-Title: javaweb-web
+Implementation-Version: 1.0.0-SNAPSHOT
+Implementation-Vendor: TERASOLUNA Framework Team
+

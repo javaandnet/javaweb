@@ -1,0 +1,61 @@
+version: '3.6'
+services:
+  javaweb:
+    build: ./docker-build/app-build
+    container_name: javaweb-build
+    volumes:
+      - ./javaweb:/usr/src/javaweb
+    tty: true
+  tomcat:
+    build: ./docker-build/tomcat-build
+    container_name: javaweb-tomcat
+    volumes:
+      - ./javaweb:/usr/src/javaweb
+      - ./javaweb/javaweb-web/target/javaweb-web.war:/opt/tomcat/webapps/javaweb-web.war
+    ports:
+      - "8080:8080"
+      - "5005:5005"
+      - "9090:9090"
+    environment:
+      VIRTUAL_HOST: localhost
+      VIRTUAL_PORT: 8080
+      JPDA_ADDRESS: 5005
+      CATALINA_OPTS: "-Dcom.sun.management.jmxremote
+       -Dcom.sun.management.jmxremote.port=9090
+       -Dcom.sun.management.jmxremote.rmi.port=9090
+       -Dcom.sun.management.jmxremote.ssl=false
+       -Dcom.sun.management.jmxremote.local.only=false
+       -Dcom.sun.management.jmxremote.authenticate=false
+       -Djava.rmi.server.hostname=localhost"
+    depends_on:
+      - postgres
+    tty: true
+  postgres:
+    image: postgres:11-alpine
+    container_name: javaweb-postgres-dev
+    environment:
+      POSTGRES_USER: javaweb
+      POSTGRES_PASSWORD: javaweb
+      POSTGRES_INITDB_ARGS: "--encoding=UTF-8"
+    ports:
+      - 5432:5432
+    volumes:
+      - ./postgres/init:/docker-entrypoint-initdb.d
+      - ./postgres/pgdata:/var/lib/postgresql/data
+    hostname: javaweb-postgres-dev
+    user: root
+    restart: always
+  pgadmin4:
+    image: dpage/pgadmin4:5.6
+    container_name: javaweb-pgadmin4
+    ports:
+      - 20000:80
+    volumes:
+      - ./pgadmin:/var/lib/pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: test@test.com
+      PGADMIN_DEFAULT_PASSWORD: root
+    hostname: pgadmin4
+    depends_on:
+      - postgres
+    restart: always

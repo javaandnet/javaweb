@@ -1,0 +1,12 @@
+date:2022-05-07 01:02:00	thread:main	X-Track:	level:WARN 	logger:org.mybatis.spring.mapper.ClassPathMapperScanner	message:No MyBatis mapper was found in '[com.example.javaweb.domain.repository]' package. Please check your configuration.
+date:2022-05-07 01:02:02	thread:main	X-Track:	level:INFO 	logger:o.springframework.web.servlet.DispatcherServlet 	message:Initializing Servlet 'appServlet'
+date:2022-05-07 01:02:02	thread:main	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:
+  	c.e.j.a.w.HelloController:
+  	{[GET, POST] [/]}: home(Locale,Model)
+date:2022-05-07 01:02:02	thread:main	X-Track:	level:DEBUG	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:1 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+date:2022-05-07 01:02:04	thread:main	X-Track:	level:INFO 	logger:o.springframework.web.servlet.DispatcherServlet 	message:Completed initialization in 1718 ms
+date:2022-05-07 01:15:40	thread:http-nio-8080-exec-1	X-Track:a7e02874ee164a608ec08c634dd08776	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to com.example.javaweb.app.welcome.HelloController#home(Locale, Model)
+date:2022-05-07 01:15:40	thread:http-nio-8080-exec-1	X-Track:a7e02874ee164a608ec08c634dd08776	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[START CONTROLLER] HelloController.home(Locale,Model)
+date:2022-05-07 01:15:40	thread:http-nio-8080-exec-1	X-Track:a7e02874ee164a608ec08c634dd08776	level:INFO 	logger:com.example.javaweb.app.welcome.HelloController 	message:Welcome home! The client locale is ja_JP.
+date:2022-05-07 01:15:40	thread:http-nio-8080-exec-1	X-Track:a7e02874ee164a608ec08c634dd08776	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[END CONTROLLER  ] HelloController.home(Locale,Model)-> view=welcome/home, model={serverTime=2022年5月7日 1:15:40 JST}
+date:2022-05-07 01:15:40	thread:http-nio-8080-exec-1	X-Track:a7e02874ee164a608ec08c634dd08776	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[HANDLING TIME   ] HelloController.home(Locale,Model)-> 45,773,494 ns

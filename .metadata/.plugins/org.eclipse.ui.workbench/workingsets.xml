@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1651843480139_0" label="Java メイン・ソース" name="Java Main Sources"/>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1651843480144_1" label="Java テスト・ソース" name="Java Test Sources"/>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1651843506615_3" label="javaweb" name="javaweb">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/javaweb" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/javaweb-env" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/javaweb-domain" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/javaweb-web" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/javaweb-initdb" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/javaweb-selenium" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1651850242528_4" label="terasoluna-tourreservation" name="terasoluna-tourreservation"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1651843480350_2" label="ウィンドウ・ワーキング・セット" name="Aggregate for window 1651843480350"/>
+</workingSetManager>

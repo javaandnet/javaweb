@@ -18,7 +18,7 @@ Apache Maven 3.8.5 (3599d3414f046de2324203b78ddcf9b5e4388aa0)
 jabaweb-build　＝＞　mvn -version
 Apache Maven 3.0.5~~
 
-２、bootstrap整合したい
+~~２、bootstrap整合したい~~
 
 ３、DB疎通またしてない
 

@@ -8,6 +8,6 @@
 /.metadata
 /Servers
 /javaweb/log/*
-/postgres/pgdata/*
+/postgres/pgdata
 /pgadmin
 /tmp

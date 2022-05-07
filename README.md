@@ -11,12 +11,12 @@
 
 
 # 問題点
-~~ １、docker(javaweb-build)内 mvn install 失敗　
+~~１、docker(javaweb-build)内 mvn install 失敗　
 mvn　バージョン問題推測
 ローカル　＝＞　mvn -version
 Apache Maven 3.8.5 (3599d3414f046de2324203b78ddcf9b5e4388aa0)
 jabaweb-build　＝＞　mvn -version
-Apache Maven 3.0.5 ~~
+Apache Maven 3.0.5~~
 
 ２、bootstrap整合したい
 

@@ -1,7 +1,9 @@
 version: '3.6'
 services:
   javaweb:
-    build: ./docker-build/app-build
+    build:
+      context: .
+      dockerfile: ./docker-build/app-build/Dockerfile
     container_name: javaweb-build
     volumes:
       - ./javaweb:/usr/src/javaweb

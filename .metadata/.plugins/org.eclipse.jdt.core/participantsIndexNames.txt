@@ -1,9 +1,0 @@
-INDEX VERSION 1.131
-/Users/tyouree/Documents/workspace/javaapp/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2923979153.index
-/javaweb-web/src/main/java
-/Users/tyouree/Documents/workspace/javaapp/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1495614074.index
-/javaweb-web/src/main/java
-/Users/tyouree/Documents/workspace/javaapp/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3380372972.index
-/javaweb-web/src/main/java
-/Users/tyouree/Documents/workspace/javaapp/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2264095177.index
-/javaweb-web/src/main/java

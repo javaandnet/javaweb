@@ -17,3 +17,9 @@
 */.DS_Store
 */.settings
 */*/.settings
+.classpath
+*/.classpath
+*/*/.classpath
+.project
+*/. project
+*/*/. project

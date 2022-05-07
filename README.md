@@ -1,4 +1,4 @@
-# TERASOLUNA(spring mvc) + java8(jdk) + Mybatis3 + postgresql + pgAdmin
+# Docker + TERASOLUNA(spring mvc) + java + tomcat + Mybatis3 + bootstrap4 + postgresql + pgAdmin
 ※ java-1.8.0-amazon-corretto-devel
 
 # 起動手順

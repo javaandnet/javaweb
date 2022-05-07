@@ -8,6 +8,9 @@
     ">
 
     <sec:http pattern="/resources/**" security="none"/>
+    <!-- ブラウザキャッシュ対策を行う:アクセスがキャッシュされない -->
+    <sec:http pattern="/webjars/**" security="none"/>
+    
     <sec:http>
         <sec:form-login/>
         <sec:logout/>

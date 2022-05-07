@@ -7,7 +7,9 @@
 # Ignore bundler config.
 /.metadata
 /Servers
-/javaweb/log/*
+/javaweb/log
+/javaweb/.settings
+/javaweb/.project
 /postgres/pgdata
 /pgadmin
 /tmp

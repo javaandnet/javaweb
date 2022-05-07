@@ -7,4 +7,6 @@
     <link rel="stylesheet" href="<c:url value='/webjars/bootstrap/css/bootstrap.min.css'/>">
     <!-- ★ Springのタグライブラリを使う -->
     <link rel="stylesheet" href="<spring:url value='/webjars/bootstrap/css/bootstrap.min.css'/>">
+    
+    
 </h1>

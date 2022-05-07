@@ -129,4 +129,15 @@
         <tracking-mode>COOKIE</tracking-mode>
     </session-config>
 
+
+    <!-- アプリケーションコード上で指定するパスにはバージョンは含めない -->
+    <!-- アプリケーションコードから生成するHTMLにはパスの中にバージョンを含める -->
+    <filter>
+        <filter-name>ResourceUrlEncodingFilter</filter-name>
+        <filter-class>org.springframework.web.servlet.resource.ResourceUrlEncodingFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>ResourceUrlEncodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
 </web-app>

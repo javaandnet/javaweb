@@ -34,16 +34,18 @@
 
     <mvc:interceptors>
         <mvc:interceptor>
+            <!-- HanderInterceptorの処理対象から除外 -->
             <mvc:mapping path="/**" />
             <mvc:exclude-mapping path="/resources/**" />
-            <bean
-                class="org.terasoluna.gfw.web.logging.TraceLoggingInterceptor" />
+            <mvc:exclude-mapping path="/webjars/**" />
+            <bean class="org.terasoluna.gfw.web.logging.TraceLoggingInterceptor" />
         </mvc:interceptor>
+        
+        
         <mvc:interceptor>
             <mvc:mapping path="/**" />
             <mvc:exclude-mapping path="/resources/**" />
-            <bean
-                class="org.terasoluna.gfw.web.token.transaction.TransactionTokenInterceptor" />
+            <bean class="org.terasoluna.gfw.web.token.transaction.TransactionTokenInterceptor" />
         </mvc:interceptor>
         <mvc:interceptor>
             <mvc:mapping path="/**" />
@@ -126,4 +128,8 @@
             pointcut="execution(* org.springframework.web.servlet.HandlerExceptionResolver.resolveException(..))" />
     </aop:config>
 
+	<mvc:resources mapping="/webjars/**" location="/webjars/">
+	    <!-- このタグを指定するとSpringがwebjars-locatorとの連携機能を自動で有効化してくれる -->
+	    <mvc:resource-chain resource-cache="true"/>
+	</mvc:resources>
 </beans>
